@@ -1,0 +1,166 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4a90e2;
+}
+
+
+.add-customer-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.add-customer-form h3 {
+  font-size: 1.5rem;
+  color: #4a90e2;
+  margin-bottom: 15px;
+}
+
+.add-customer-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.add-customer-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-customer-form button:hover {
+  background-color: #357ab7;
+}
+
+
+.search-customer {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-customer input {
+  padding: 12px;
+  width: 80%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Customer List Styles */
+.customer-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 30px;
+}
+
+.customer-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.customer-card:hover {
+  transform: translateY(-5px);
+}
+
+.customer-card h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.customer-card p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.customer-card p:last-child {
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+
+.customer-list p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #999;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .customer-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .customer-list {
+    grid-template-columns: 1fr;
+  }
+
+  .add-customer-form input {
+    padding: 10px;
+  }
+
+  .add-customer-form button {
+    padding: 10px;
+  }
+
+  .search-customer input {
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .add-customer-form h3 {
+    font-size: 1.3rem;
+  }
+
+  .customer-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .customer-card p {
+    font-size: 0.9rem;
+  }
+}
